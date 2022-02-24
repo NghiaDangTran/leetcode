@@ -20,3 +20,6 @@ class Solution(object):
                 
                 i+=1
         return len(data)
+    
+#Runtime: 158 ms, faster than 18.89% of Python online submissions for Remove Duplicates from Sorted Array.
+#Memory Usage: 14.4 MB, less than 96.23% of Python online submissions for Remove Duplicates from Sorted Array.
