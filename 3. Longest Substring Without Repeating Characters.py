@@ -23,8 +23,10 @@ class Solution:
             if s[i] not in data:
                 result=max(result,i-l+1)
             else:
-                if data[s[i]]>l:
+                if data[s[i]]>=l:
                     l=data[s[i]]+1
+                else:result=max(result,i-l+1)
 
 
             data[s[i]]=i
+        return result
