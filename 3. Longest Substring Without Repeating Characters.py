@@ -30,3 +30,19 @@ class Solution:
 
             data[s[i]]=i
         return result
+
+# second try
+# abcabcbb
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        data=""
+        result=0
+        
+        for i in range(len(s)):
+            data+=s[i]
+            if data.count(s[i])>1:
+                data=data[data.index(s[i])+1:]
+            result=max(result,len(data))
+        return result
+                
+        
