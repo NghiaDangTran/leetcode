@@ -54,21 +54,36 @@ class Solution:
             # better imorivement
             # so the sCounter will make our code slower
             # so if we think different we only need to del s[i] and then add the s[i+len(p)] into the counter
+            # result=[]
+            # pCount=Counter(p)
+            # sCount=Counter(s[:len(p)])
+            
+            # for i in range(len(s)-len(p)+1):
+            #     # print()
+            #     if (pCount)==sCount:
+            #         result.append(i)
+            #     sCount[s[i]]-=1
+            #     if i+len(p)<len(s):
+            #         sCount[s[i+len(p)]]+=1
+                
+            # return result
+            # further improve
             result=[]
             pCount=Counter(p)
-            sCount=Counter(s[:len(p)])
-            
-            for i in range(len(s)-len(p)+1):
-                # print()
-                if (pCount)==sCount:
-                    result.append(i)
-                sCount[s[i]]-=1
-                if i+len(p)<len(s):
-                    sCount[s[i+len(p)]]+=1
-                
-            return result
-            
+            sCount=Counter(s[:len(p)-1])
+            print(sCount)
 
+            # if pCount==sCount:
+            #         result.append(0)
+            for i in range(len(p)-1,len(s)):
+                # print(s[i-len(p):i])
+                sCount[s[i]]+=1
+                if i>=len(p):
+                    sCount[s[i-len(p)]]-=1
+                if pCount==sCount:
+                    result.append(i-len(p)+1)
+            
+            return result
         
 
 
