@@ -1,38 +1,27 @@
-# import math
-# class Solution:
-#     def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
-#         # dynamic program
-#         # nums = [10,5,2,6], k = 100
-#         # idea for i in range of nums 
-#         # i go from 0 to end
-#         curr=0
-#         for i in range(len(nums)):
-#             temp=nums
-#             for j in range(i):
+from ctypes import pointer
 
-            
-#         return 0
-        
-# nums = [10,5,2,6]
-# k = 100
-# [10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6]
-import math
 
 class Solution(object):
-    def subsets(self, nums,k):
-        ret = []
-        
-    
-        def dfs(data,curr):
-            if math.prod(curr)<k:
-                ret.append(curr)
-            for i in range(len(data)):
-                dfs(data[i+1:],curr+[data[i]])
-            
-        dfs(nums,[])
-        ret.sort()
-        return ret
+    def numSubarrayProductLessThanK(self, nums, k):
+        # 2 pointer
 
-print(Solution.subsets(1, [10,5,2,6],100))
+        l = 0
+        pro = 1
+        res = 0
+        for r in range(len(nums)):
+            pro *= nums[r]
 
-# print([3]+[1,2])
+            while pro >= k and l<=r:
+                pro //= nums[l]
+                
+
+                l += 1
+           
+        #    at the end of the while the left 
+# the importance thing here is that we need to calculate the r-l+1
+    # the logic is when ever the pro bigger than the k then we will do the l+1
+            res += r-l+1
+        return res
+
+
+print(Solution.numSubarrayProductLessThanK(1, [1, 2, 3], 0))
