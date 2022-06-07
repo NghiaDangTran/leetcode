@@ -10,13 +10,22 @@ class Node:
 
 class Solution:
     def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
-        stack=[root]
-        while stack:
-            curr=stack.pop()
-            if curr.right and curr.left:
-                curr.left.next=curr.right
-                if curr.next:
-                    curr.right.next=curr.next.left
-                stack.append(curr.left)
-                stack.append(curr.right)
+        
+        # curr=root?
+        head=root
+        temp=Node(-999)
+        while head:
+            curr=head
+            temp2=temp
+            while curr:
+                if curr.left:
+                    temp2.next=curr.left
+                    temp2=temp2.next
+                if curr.right:
+                    temp2.next=curr.right
+                    temp2=temp2.next
+                curr=curr.next
+            head=temp.next
+            temp.next=None
+        return root
         
