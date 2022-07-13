@@ -7,7 +7,7 @@ class Solution:
         while(n > 0):
             currMax = arr.index(max(arr[0:n+1]))
             #  if the pro Array is from 1-to length of array then we can replace the max with n
-            print(arr, currMax, n, max(arr[0:n+1]))
+            
 
             if currMax == n:
                 n -= 1
