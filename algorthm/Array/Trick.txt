@@ -1,0 +1,34 @@
+# anything that make the program to remmber use stack exp:739. Daily Temperatures 
+(minotonic stack)
+https://liuzhenglaichn.gitbook.io/algorithm/monotonic-stack
+A monotonic stack is a stack whose elements are monotonically increasing or descreasing.
+Sometimes we store the index of the elements in the stack and make sure the elements 
+corresponding to those indexes in the stack forms a mono-sequence.
+key point index and value need to store
+34. Find First and Last Position of Element in Sorted Array
+239. Sliding Window Maximum
+
+[1,3,-1]
+stack =[1]
+stack=[3]
+stack=[3,-1]
+
+
+
+
+
+
+#Sliding window work really well if the current solution has the form 
+ S[i]=S[i-1]-s[0]+s[n]
+# 2 poitner work for sort: mergeSort and work well for palidrom (2 case only odd even string odd start from middel out 
+even start from both side)
+https://leetcode.com/problems/minimum-window-substring/discuss/26808/here-is-a-10-line-template-that-can-solve-most-substring-problems
+
+#Precomputation is just using like 2 poitner first one start at 1 and the orther one start at last poitner
+exm :238
+
+
+#####@# Index as a hash key
+If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array 
+itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, 
+negate the value at that index (minus one) to indicate presence of that number.

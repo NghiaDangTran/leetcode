@@ -1,0 +1,17 @@
+An anagram is word switch or word play. It is the result of rearranging the letters of a word or phrase to produce a new word or phrase, while using all the original letters only once. In interviews, usually we are only bothered with words without spaces in them.
+
+To determine if two strings are anagrams, there are a few approaches:
+
+Sorting both strings should produce the same resulting string. This takes O(n.log(n)) time and O(log(n)) space.
+If we map each character to a prime number and we multiply each mapped number together, anagrams should have the same multiple (prime factor decomposition). This takes O(n) time and O(1) space. Examples: Group Anagram
+Frequency counting of characters will help to determine if two strings are anagrams. This also takes O(n) time and O(1) space.
+
+1) sort both of them should return the same
+def sortString(str) :
+    str = ''.join(sorted(str))
+    print(str)
+2) dicitonary or hash map to count Frequency
+
+3) trick is we can use prime number map 
+ { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
+				101 };

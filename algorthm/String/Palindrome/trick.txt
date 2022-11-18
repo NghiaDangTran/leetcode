@@ -1,0 +1,8 @@
+A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward as forward, such as madam or racecar.
+
+Here are ways to determine if a string is a palindrome:
+
+
+Reverse the string and it should be equal to itself.
+
+Have two pointers at the start and end of the string. Move the pointers inward till they meet. At every point in time, the characters at both pointers should match.
