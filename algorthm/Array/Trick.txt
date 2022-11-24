@@ -15,7 +15,7 @@ stack=[3,-1]
 
 
 
-
+another way to solve sliding window we can apply 2 pointer to solve it 
 
 
 #Sliding window work really well if the current solution has the form 
