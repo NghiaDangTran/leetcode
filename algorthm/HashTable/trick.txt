@@ -1,0 +1,1 @@
+if the operation want to use in o(1) check if doubly linked list 

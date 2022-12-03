@@ -32,3 +32,46 @@ exm :238
 If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array 
 itself as a hash table. For example, if the array only has values from 1 to N, where N is the length of the array, 
 negate the value at that index (minus one) to indicate presence of that number.
+
+
+
+
+
+
+
+
+I follow this, Quality matters not the quantity. I used to pissed of, when I started solving questions in leet code. But I used the below strategies.
+
+    1,Before solving the leet problems, I made my mind that I am going to face very bad situation. You should make your mind ready for that what ever the situation is.
+    2.Try to solve the Monthly Challenge problems. You will encounter different concepts.
+    3.After Solving Every Question, Separate the Questions what ever you solved by your own and not done by you. Make a seperate list of checklist ( Visit / Revisit List )
+    4.Every week on Friday Night, I used to revise the questions what ever the questions I have done in this week.
+    5.Makes a separate notes. what is the strategy in the question ? Can I do in this way or another way ? Can I reduce the memory or can I reduce the time complexity ?
+    6.After Solving Every 50 questions, I used to revise the questions again in less time. At this point of time, if you are not able to solve the question in 20 min, add that question to revisit list.
+    7.Repeat 4,5,6 again.
+I used to track time using chrome extension. Because leetcode does not provide any time for solving the questions in problems section.
+https://chrome.google.com/webstore/detail/leetcode-timer/hihcjkhhlbmckhhnjamfomegbnlffcni
+
+I bookmarked few discuss you can go through them and prepare your own strategy.
+
+    1.DP for beginners by @wh0ami - https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions [LIST - https://leetcode.com/list/x1k8lxi5]
+    2.Graph for beginners by @wh0ami - https://leetcode.com/discuss/general-discussion/655708/graph-for-beginners-problems-pattern-sample-solutions/562734 [LIST - https://leetcode.com/list/x1wy4de7]
+    3.Sliding window for beginners by @wh0ami - https://leetcode.com/discuss/general-discussion/657507/sliding-window-for-beginners-problems-template-sample-solutions/562721 [LIST - https://leetcode.com/list/x1lbzfk3]
+    4.DP Patterns by @atalyk - https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+    5.Leetcode patterns from edu_cative_dot_io by @late_riser - https://leetcode.com/discuss/general-discussion/457546/LeetCode-Problem-Patterns-from-***
+    6.List of questions sorted by common patterns by @Maverick2594 - https://leetcode.com/discuss/career/448285/List-of-questions-sorted-by-common-patterns
+    7.How to solve DP - String? Template and 4 Steps to be followed by @igooglethings - https://leetcode.com/discuss/general-discussion/651719/how-to-solve-dp-string-template-and-4-steps-to-be-followed
+    8.Using bit manipulation to solve problems easily and efficiently by @LHearen - https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+    9.Recursive approach to segment trees and range sum queries and lazy propagation - https://leetcode.com/articles/a-recursive-approach-to-segment-trees-range-sum-queries-lazy-propagation/
+    10.How to use Leetcode efficiently and effectively by beginners by @megaspazz - https://leetcode.com/discuss/career/450215/How-to-use-LeetCode-to-help-yourself-efficiently-and-effectively-(for-beginners)
+All the best.
+
+
+
+
+
+
+
+
+
+if the operation want to use in o(1) check if doubly linked list 
