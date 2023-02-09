@@ -1,0 +1,31 @@
+body {
+    background-color: cyan;
+}
+div{
+    height:100px;
+    width:100px;
+    background-color:green;
+    text-align:center;
+    line-height:100px;    
+    vertical-align:middle;
+    color:red;
+    font-size:16px;
+    overflow:hidden;
+    
+    
+}
+@media screen and (min-height: 300px) , (min-width:480px) {
+    body {
+        background-color: magenta;
+    }
+    div{
+        height:300px;
+        width:300px;
+        line-height:100px;
+        border-radius:50%;
+        background-color:cyan;
+        overflow:visible;
+    }
+    
+    
+}
