@@ -25,4 +25,4 @@ class Solution:
         tree.right=self.buildTree(ino[idx+1:],post)
 
         tree.left=self.buildTree(ino[:idx],post)
-        return tree
+        return tree 
